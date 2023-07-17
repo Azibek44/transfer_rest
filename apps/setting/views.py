@@ -14,7 +14,7 @@ class CreateTransferView(CreateAPIView):
         to_user_id = request.data.get('to_user')
         amount = request.data.get('amount')
         try:
-            from_user = User.objects.get(id=from_user_id)
+            from_user = User.objects.get(id=from_user_id) 
             to_user = User.objects.get(id=to_user_id)
             if float(amount) > float(from_user.balance):
                 return Response({'detail': 'Недостаточно средств для перевода'}, status=status.HTTP_400_BAD_REQUEST)
