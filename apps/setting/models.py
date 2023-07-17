@@ -9,7 +9,7 @@ class HistoryTransfer(models.Model):
         User,
         on_delete=models.CASCADE,
         related_name="from_user",
-        verbose_name="от пользователя"
+        verbose_name="от пользователя" 
     )
     to_user = models.ForeignKey(
         User,
