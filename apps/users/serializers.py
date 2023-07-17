@@ -13,7 +13,7 @@ class UserSerializer(serializers.ModelSerializer):
                   )
 
 class UserDetailSerializer(serializers.ModelSerializer):
-    from_user = HistoryTransferSerializer(read_only=True, many=True)
+    from_user = HistoryTransferSerializer(read_only=True, many=True) 
     class Meta:
         model = User 
         fields = ('id',  'username', 'email', 
