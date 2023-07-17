@@ -14,7 +14,7 @@ class User(AbstractUser):
         blank = True, null = True,
     )
     created_at = models.DateTimeField(
-        auto_now_add=True
+        auto_now_add=True 
     )
     age = models.PositiveIntegerField(
         verbose_name="Возраст",
