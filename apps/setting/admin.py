@@ -9,4 +9,4 @@ class HistoryTransferAdmin(admin.ModelAdmin):
     search_filter = ('from_user','to_user', 'is_completed','created_at','amount', )
     list_per_page = 5
 
-admin.site.register(HistoryTransfer,HistoryTransferAdmin)
+admin.site.register(HistoryTransfer,HistoryTransferAdmin) 
